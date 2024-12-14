@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OptiCraft</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home" class="nav-link">Главная</a></li>
+                <li><a href="#download" class="nav-link">Скачать</a></li>
+                <li><a href="#help" class="nav-link">Помощь</a></li>
+                <li><a href="#info" class="nav-link">Информация</a></li>
+                <li><a href="#history" class="nav-link">История версий</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="app">
+        <section id="home" class="page active">
+            <h1>Добро пожаловать в OptiCraft</h1>
+            <p>Новый дизайн сайта!</p>
+			<center>
+			<p>Пока что новостей нет...</p>
+			</center>
+        </section>
+        
+ <section id="download" class="page">
+    <h1>Скачать</h1>
+    <p id="select-version-text">Выберите версию игры для загрузки.</p>
+    
+    <div class="search-container">
+        <input type="text" id="version-search" placeholder="Поиск версии..." class="search-input">
+    </div>
+    <ul id="version-list" class="version-list">
+        <li class="version-item" data-version="version-1-12">OptiCraft 1.12</li>
+        <li class="version-item" data-version="version-1-16">OptiCraft 1.16</li>
+        <li class="version-item" data-version="version-1-17">OptiCraft 1.17</li>
+        <li class="version-item" data-version="version-1-19">OptiCraft 1.19</li>
+        <li class="version-item" data-version="version-1-20">OptiCraft 1.20</li>
+    </ul>
+    
+    <!-- Секции для скачивания каждой версии -->
+    <div id="version-1-12" class="download-section">
+        <h2>OptiCraft 1.12</h2>
+        <p>Скачайте версию 1.12 - Пока что не доступно</p>
+        <button class="back-btn">Назад</button>
+    </div>
+    <div id="version-1-16" class="download-section">
+        <h2>OptiCraft 1.16</h2>
+        <p>Скачайте версию 1.16 - Пока что не доступно</p>
+        <button class="back-btn">Назад</button>
+    </div>
+    <div id="version-1-17" class="download-section">
+        <h2>OptiCraft 1.17</h2>
+        <p>Скачайте версию 1.17 - Пока что не доступно</p>
+        <button class="back-btn">Назад</button>
+    </div>
+    <div id="version-1-19" class="download-section">
+        <h2>OptiCraft 1.19</h2>
+        <p>Скачайте версию 1.19</p>
+        <button class="download-btn" onclick="window.location.href='https://drive.google.com/file/d/172YASqq8GdA_ZxaJ-mx2NbyCU_vqvha1/view?usp=sharing';">Скачать 1.19</button>
+        <button class="back-btn">Назад</button>
+    </div>
+    <div id="version-1-20" class="download-section">
+        <h2>OptiCraft 1.20</h2>
+        <p>Скачайте версию 1.20 (Бета)</p>
+        <button class="download-btn" onclick="window.location.href='https://drive.google.com/file/d/1CY7xHJaceCrxlVPE0mKadTwIPpQuRo_F/view?usp=sharing';">Скачать 1.20</button>
+        <button class="back-btn">Назад</button>
+    </div>
+</section>
+
+
+        <section id="help" class="page">
+            <h1>Помощь</h1>
+            <p>Ответы на часто задаваемые вопросы.</p>
+			<p>Пока что ничего нет...</p>
+			<p>Ожидайте в скором времени!</p>
+        </section>
+
+        <section id="info" class="page">
+            <h1>Информация</h1>
+            <p>Общая информация для игроков.</p>
+			<p>Пока что ничего нет...</p>
+			<p>Ожидайте в скором времени!</p>
+        </section>
+
+        <section id="history" class="page">
+            <h1>История версий</h1>
+            <p>Детали изменений и обновлений.</p>
+			<p>Пока что ничего нет...</p>
+			<p>Ожидайте в скором времени!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; OptiCraftSu 2024 | Не связано и не одобрено Mojang</p>
+        <div class="footer-controls">
+		    <button class="telegram-btn" onclick="window.location.href='https://t.me/opticraftsu';">Telegram</button>
+			<a class="telegram-btn" href="legacy.html">Legacy</a>
+            <button id="theme-toggle">Сменить тему</button>
+        </div>
+    </footer>
+</body>
+</html>
