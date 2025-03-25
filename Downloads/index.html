@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="icon.jpg" type="image/x-icon">
-    <title>Скачивание | OpticraftSu</title>
+	<link rel="icon" href="icon.png" type="image/x-icon">
+    <title>Скачивание | Opticraft</title>
 	<script defer src="script.js"></script>
     <style>
         @font-face {
@@ -48,6 +48,8 @@
         }
 
         .logo {
+			font-family: 'Minecraft';
+            src: url('Fonts/font2.ttf');
             font-size: 1.1rem;
             color: var(--text-color);
             text-decoration: none;
@@ -385,7 +387,7 @@
 </head>
 <body>
     <header>
-        <a onclick="window.location.href='https://opticraftsu.github.io/';" class="logo"><img src="icon.jpg" alt="Cube">OptiCraft</a>
+        <a onclick="window.location.href='https://opticraftsu.github.io/';" class="logo"><img src="icon.png" alt="Cube">OptiCraft</a>
         <nav>
             <button class="menu-button">☰</button>
             <div class="menu">
@@ -420,6 +422,7 @@
         <input type="text" id="version-search" placeholder="Поиск версии..." class="search-input">
     </div>
     <ul id="version-list" class="version-list">
+	    <li class="version-item font-text" data-version="version-1-7">OptiCraft 1.7</li>
         <li class="version-item font-text" data-version="version-1-12">OptiCraft 1.12</li>
         <li class="version-item font-text" data-version="version-1-17">OptiCraft 1.17</li>
         <li class="version-item font-text" data-version="version-1-18">OptiCraft 1.18</li>
@@ -427,6 +430,12 @@
         <li class="version-item font-text" data-version="version-1-20">OptiCraft 1.20</li>
 		<li class="version-item font-text" data-version="version-1-21">OptiCraft 1.21</li>
     </ul>
+	<div id="version-1-7" class="download-section">
+        <h2>OptiCraft 1.7</h2>
+        <p>Скачайте версию 1.7.3.1</p>
+		<button class="download-btn" onclick="window.location.href='https://drive.google.com/file/d/1-ujgkCcfX07VXMR7PbURdgB2-l9jW66x/view?usp=sharing';">Скачать 1.12</button>
+        <button class="back-btn">Назад</button>
+    </div>
     <div id="version-1-12" class="download-section">
         <h2>OptiCraft 1.12</h2>
         <p>Скачайте версию 1.12.0</p>
